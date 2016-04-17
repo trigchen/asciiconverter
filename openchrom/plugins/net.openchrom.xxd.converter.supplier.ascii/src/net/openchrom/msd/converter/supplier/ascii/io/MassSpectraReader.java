@@ -67,7 +67,7 @@ public class MassSpectraReader extends AbstractMassSpectraReader implements IMas
 				continue;
 			}
 			String[] temp = line.split("\\s+");
-			if(temp.length >= 2) {
+			if((temp != null) && (temp.length >= 2)) {
 				addIon(massSpectrum, temp);
 			}
 		}
